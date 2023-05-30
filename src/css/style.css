@@ -1,0 +1,116 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px; 
+    margin: 0 auto;
+    background-color: #6c6b99ef;
+    color: #333333;
+}
+
+body.modo-escuro{
+    background-color: #212121;
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 40px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-time:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-time{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+} 
+
+main .cartao-time{
+    background-color: #cfe82e28;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-time:hover{
+    background-color: #58595cbd;
+}
+
+.modo-escuro .cartao-time{
+    background-color: #acc3c6;
+    
+}
+
+main .cartao-time .informacoes{
+    background-color: #5c7fd6;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-time .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-time .gif{
+    width: 110px;
+    height: 110px;
+}
+
+main .cartao-time .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-time .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.defensivo{
+    background-color: #7ac74c;
+}
+
+.atacante{
+    background-color: #df67ddfb;
+}
+
+.centroavante{
+    background-color: #ee8130;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
